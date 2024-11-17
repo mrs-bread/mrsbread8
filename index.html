@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="form.js" defer></script>
+    <link rel="stylesheet"  href="style.css">
+    <title> Form </title>
+  </head>
+
+  <body>
+    <div id="overlay"></div>
+    <button id="open-form"> Форма </button>
+    <div id="popup" class="popup">
+      
+        <form id="myform" class="formcarryForm" action="https://formcarry.com/s/gcriyys4FAE" enctype="multipart/form-data">
+        
+        <h1 class="form_title"> Форма </h1>
+
+        <label> 
+          ФИО:<br>
+          <input name="field-fio">
+        </label><br>
+
+        <label>
+          E-mail:<br>
+          <input name="field-email" type="email">
+        </label><br>
+      
+        <label> 
+          Номер телефона:<br>
+          <input name="field-number" type="tel">
+        </label><br>
+
+        <label> 
+          Организация: <br>
+          <select name="field-org">
+            <option value="org_1">Организация №1</option>
+            <option value="org_2">Организация №2</option>
+            <option value="org_3">Организация №3</option>
+          </select>
+        </label><br>
+
+        <label>
+          Сообщение:<br>
+          <textarea name="field-message"></textarea>
+        </label><br>
+      
+        <label><input type="checkbox" id="formcheck" name="check"> С политикой обработки персональных данных ознакомлен(а)</label><br>
+
+        <input type="submit" value="Отправить"> 
+      </form>
+    </div>
+  </body>
+</html>
